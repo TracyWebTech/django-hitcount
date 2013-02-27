@@ -6,7 +6,7 @@ def read(fname):
  
 setup(
     name = "django-hitcount",
-    version = "0.2",
+    version = "0.3",
     url = 'http://github.com/thornomad/django-hitcount',
     license = 'BSD',
     description = "Django hit counter application that tracks the number of hits/views for chosen objects",

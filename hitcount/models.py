@@ -5,7 +5,7 @@ from django.conf import settings
 from django.db.models import F
 
 from django.contrib.contenttypes.models import ContentType
-from django.contrib.auth.models import User
+
 from django.contrib.contenttypes import generic
 
 from django.dispatch import Signal
@@ -161,7 +161,7 @@ class Hit(models.Model):
     ip              = models.CharField(max_length=40, editable=False)
     session         = models.CharField(max_length=40, editable=False)
     user_agent      = models.CharField(max_length=255, editable=False)
-    user            = models.ForeignKey(User,null=True, editable=False)
+    user            = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, editable=False)
     hitcount        = models.ForeignKey(HitCount, editable=False)
 
     class Meta:
