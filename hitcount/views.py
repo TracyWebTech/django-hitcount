@@ -1,10 +1,10 @@
-from django.http import Http404, HttpResponse, HttpResponseBadRequest
-from django.utils import simplejson
+import simplejson
 from django.conf import settings
-from django.contrib.contenttypes.models import ContentType
+from django.http import Http404, HttpResponse, HttpResponseBadRequest
 
-from hitcount.utils import get_ip
 from hitcount.models import Hit, HitCount, BlacklistIP, BlacklistUserAgent
+from hitcount.utils import get_ip
+
 
 def _update_hit_count(request, hitcount):
     '''
