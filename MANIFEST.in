@@ -1,3 +1,2 @@
 include LICENSE
-recursive-include hitcount/*
 include README.md
