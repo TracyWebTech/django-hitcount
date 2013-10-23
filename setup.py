@@ -8,13 +8,13 @@ def read(fname):
 setup(
     name = "django-hitcount",
     version = get_version(),
-    url = 'http://github.com/vosi/django-hitcount',
+    url = 'http://github.com/thornomad/django-hitcount',
     license = 'BSD',
     description = "Django hit counter application that tracks the number of hits/views for chosen objects",
     long_description = read('README.md'),
 
-    author = 'VoSi',
-    author_email = 'fon.vosi@gmail.com',
+    author = 'Damon Timm',
+    author_email = 'damontimm@gmail.com',
 
     packages = find_packages(),
 

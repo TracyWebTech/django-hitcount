@@ -1,15 +1,13 @@
 import datetime
 
 from django.db import models
-from django.conf import settings
 from django.db.models import F
-
-from django.contrib.contenttypes.models import ContentType
-from django.contrib.contenttypes import generic
-
-from django.dispatch import Signal
-
+from django.conf import settings
 from django.utils import timezone
+from django.dispatch import Signal
+from django.contrib.contenttypes import generic
+from django.contrib.contenttypes.models import ContentType
+
 
 # SIGNALS #
 
