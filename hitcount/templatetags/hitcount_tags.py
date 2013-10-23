@@ -175,7 +175,8 @@ class GetHitCountJavascript(template.Node):
                 "\t\t\t// do something for error?\n"                   + \
                 "\t\t}\n\t},\n\t'json');"
 
-        return js
+        return template.loader.render_to_string('hitcount/tags/count_ajax.js',
+                                                {'hitcount_pk': obj.pk})
 
 def get_hit_count_javascript(parser, token):
     '''

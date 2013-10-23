@@ -1,5 +1,6 @@
 
-import simplejson
+import json
+
 from django.conf import settings
 from django.http import Http404, HttpResponse, HttpResponseBadRequest, \
                         HttpResponseNotAllowed
@@ -111,5 +112,5 @@ def update_hit_count_ajax(request):
     else:
         resp['status'] = "no hit recorded"
 
-    json = simplejson.dumps(resp)
-    return HttpResponse(json,mimetype="application/json")
+    json_dump = json.dumps(resp)
+    return HttpResponse(json_dump, mimetype="application/json")
