@@ -5,7 +5,6 @@ To that end, I would prefer to point people to an active fork of the project.
 If you have a fork, or know of a good fork to use, please let me know and I
 will post the links/recommendations here.  It's been fun sharing. -Damon
 
-*NOTE2* this is a beta fork version ('called 0.3') made for dudalibrary by Duda Nogueira in order to be compatible with Django 1.5. Be aware that this breaks compatibility with the old User Model.
 
 Django-HitCount
 ===============
